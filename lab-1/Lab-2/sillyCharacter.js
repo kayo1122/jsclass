@@ -44,8 +44,13 @@ function generateCharacterDescription() {
     return `Meet ${characterName}, a ${age}-year-old character who loves ${favoriteFood}. ${
         isSuperhero ? "They are a superhero with the following powers: " + specialPowers.join(", ") : "They are not a superhero."
     }`;
+}
 
 // Display the character description on the webpage
+const descriptionElement = document.getElementById("characterDescription");
+descriptionElement.textContent = generateCharacterDescription();
+
+
 
 // Functions to update character's age
 
