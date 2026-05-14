@@ -73,11 +73,16 @@ function updateName() {
     }
 }
 
-function updateDescription() {
+
+
+
+// Function to update the character's description after changing agefunction updateDescription() {
     descriptionElement.textContent = generateCharacterDescription();
-}
 
-
-// Function to update the character's description after changing age
 // Add event listeners for buttons using querySelector
+
+document.getElementById("increaseAgeButton").addEventListener("click", increaseAge);
+document.getElementById("decreaseAgeButton").addEventListener("click", decreaseAge);
+document.getElementById("updateNameButton").addEventListener("click", updateName);
+
 
