@@ -61,3 +61,6 @@ let decreaseAge = () => {
 
 // Function to update the character's description after changing age
 // Add event listeners for buttons using querySelector
+document.getElementById("increaseAge").addEventListener("click", increaseAge);
+document.getElementById("decreaseAge").addEventListener("click", decreaseAge);
+
