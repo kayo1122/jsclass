@@ -33,34 +33,16 @@ display the character's attributes in a creative and humorous way.
 */
 
 // Declare and initialize variables
-let characterName = "Zorg the Mighty";
-let age = Math.floor(Math.random() * 100) + 1; 
-let isSuperhero = true;
-let specialPowers = ["Invisibility", "Super Strength", "Flight"];
-let favoriteFood = "Spaghetti";
 
 // Function to generate a random character description
-let generateDescription = () => {
-    return `${characterName} is ${age} years old, loves ${favoriteFood}, and has special powers like ${specialPowers.join(", ")}. Is ${isSuperhero ? "a superhero" : "not a superhero"}.`;
-};
 
 // Display the character description on the webpage
-document.getElementById("characterDescription").innerText = generateDescription();
+
 
 // Functions to update character's age
-let increaseAge = () => {
-    age++;
-    document.getElementById("characterDescription").innerText = generateDescription();
-};
-
-let decreaseAge = () => {   
-    age--;
-    document.getElementById("characterDescription").innerText = generateDescription();
-};
 
 
 // Function to update the character's description after changing age
 // Add event listeners for buttons using querySelector
-document.getElementById("increaseAge").addEventListener("click", increaseAge);
-document.getElementById("decreaseAge").addEventListener("click", decreaseAge);
+
 
