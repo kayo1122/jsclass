@@ -45,9 +45,18 @@ let generateDescription = () => {
 };
 
 // Display the character description on the webpage
-
+document.getElementById("characterDescription").innerText = generateDescription();
 
 // Functions to update character's age
+let increaseAge = () => {
+    age++;
+    document.getElementById("characterDescription").innerText = generateDescription();
+};
+
+let decreaseAge = () => {   
+    age--;
+    document.getElementById("characterDescription").innerText = generateDescription();
+};
 
 
 // Function to update the character's description after changing age
