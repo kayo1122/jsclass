@@ -33,20 +33,49 @@ display the character's attributes in a creative and humorous way.
 */
 
 // Declare and initialize variables
-let characterName = String("Zorg");
-let age = parseInt(Math.floor(Math.random() * 100) + 1);
-let isSuperhero = Boolean(true);
-let specialPowers = Array("Invisibility", "Super Strength", "Flight");
-let favoriteFood = String("Pizza");
+let characterName = "Zorg";
+let age =(Math.floor(Math.random() * 100) + 1);
+let isSuperhero = true;
+let specialPowers = ["Invisibility", "Super Strength", "Flight"];
+let favoriteFood = "Pizza";
 // Function to generate a random character description
+function generateCharacterDescription() {
+    return `Meet ${characterName}, a ${age}-year-old character who loves ${favoriteFood}. ${
+        isSuperhero ? "They are a superhero with the following powers: " + specialPowers.join(", ") : "They are not a superhero."
+    }`;
 
+}
 // Display the character description on the webpage
-
+const descriptionElement = document.getElementById("characterDescription");
+descriptionElement.textContent = generateCharacterDescription();
 
 // Functions to update character's age
+function increaseAge() {
+    age++;
+    updateDescription();
+}
 
+function decreaseAge() {
+    if (age > 0) {
+        age--;
+        updateDescription();
+    }
+}
+
+function updateDescription() {
+    descriptionElement.textContent = generateCharacterDescription();
+}
+function updateName() {
+    const newName = prompt("Enter a new name for the character:");
+    if (newName) {
+        characterName = newName;
+        updateDescription();
+    }
+}
 
 // Function to update the character's description after changing age
 // Add event listeners for buttons using querySelector
 
-
+document.getElementById("increaseAgeButton").addEventListener("click", increaseAge);
+document.getElementById("decreaseAgeButton").addEventListener("click", decreaseAge);
+document.getElementById("updateNameButton").addEventListener("click", updateName);
