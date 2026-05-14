@@ -33,7 +33,11 @@ display the character's attributes in a creative and humorous way.
 */
 
 // Declare and initialize variables
-
+let characterName = String("Zorg");
+let age = parseInt(Math.floor(Math.random() * 100) + 1);
+let isSuperhero = Boolean(true);
+let specialPowers = Array("Invisibility", "Super Strength", "Flight");
+let favoriteFood = String("Pizza");
 // Function to generate a random character description
 
 // Display the character description on the webpage
