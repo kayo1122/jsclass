@@ -65,7 +65,17 @@ function decreaseAge() {
     }
 }
 
+function updateName() {
+    const newName = prompt("Enter a new name for the character:");
+    if (newName) {
+        characterName = newName;
+        updateDescription();
+    }
+}
 
+function updateDescription() {
+    descriptionElement.textContent = generateCharacterDescription();
+}
 
 
 // Function to update the character's description after changing age
