@@ -40,6 +40,10 @@ let specialPowers = ["Invisibility", "Super Strength", "Flight"];
 let favoriteFood = "Pizza";
 
 // Function to generate a random character description
+function generateCharacterDescription() {
+    return `Meet ${characterName}, a ${age}-year-old character who loves ${favoriteFood}. ${
+        isSuperhero ? "They are a superhero with the following powers: " + specialPowers.join(", ") : "They are not a superhero."
+    }`;
 
 // Display the character description on the webpage
 
