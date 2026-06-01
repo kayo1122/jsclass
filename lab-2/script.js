@@ -31,3 +31,6 @@ else {
     message = "System Stable";
 }
 
+//textContent
+output.textContent = message;
+
