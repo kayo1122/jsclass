@@ -18,4 +18,7 @@ tfoot th {
 tfoot td {
 	font-weight: bold;
 }
+body{
+	color: blue;
+}
 /* Align individual prices to the right */
