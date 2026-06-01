@@ -8,3 +8,8 @@ let enemyNearby = true;
 //querySelector
 let output = document.querySelector("#output");
 
+//output message
+let message = "";
+
+
+
