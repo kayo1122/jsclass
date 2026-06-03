@@ -1,58 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Mission Control</title>
-        <script src="script.js"></script>
+        <title>Mission Control</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     
 <body>
     <h2>Mission Control</h2>
-    <div id ="mission-builder">
+    <div id="mission-builder">
 
-    <!--  agent type-->    
+        <!-- Agent Type -->
         <div class="mission-row">
-            <button = "btn-agent-type">Agent Type</button>
-            <span id="agent-type"></span>
-        </div>
-
-    <!--  mission location-->    
-        <div class="mission-row">
-            <button = "btn-mission-location">Mission Location</button>
-            <span id="mission-location"></span>
+            <button id="btn-agent">Agent Type</button>
+            <span id="display-agent">Not selected</span>
         </div>
 
-    <!--  weapon loadout-->    
+        <!-- Mission Location -->
         <div class="mission-row">
-            <button = "btn-weapon-loadout">Weapon Loadout</button>
-            <span id="weapon-loadout"></span>
+            <button id="btn-location">Mission Location</button>
+            <span id="display-location">Not selected</span>
         </div>
-    <!--  mission objective-->    
+
+        <!-- Weapon Loadout -->
         <div class="mission-row">
-            <button = "btn-mission-objective">Mission Objective</button>
-            <span id="mission-objective"></span>
+            <button id="btn-weapon">Weapon Loadout</button>
+            <span id="display-weapon">Not selected</span>
         </div>
-    <!--  risk level-->    
+
+        <!-- Mission Objective -->
         <div class="mission-row">
-            <button = "btn-risk-level">Risk Level</button>
-            <span id="risk-level"></span>
+            <button id="btn-objective">Mission Objective</button>
+            <span id="display-objective">Not selected</span>
         </div>
-    <!--  launch button-->    
+
+        <!-- Risk Level -->
         <div class="mission-row">
-            <button = "btn-launch-mission">LAUNCH MISSION</button>
+            <button id="btn-risk">Risk Level</button>
+            <span id="display-risk">Not selected</span>
         </div>
+
+        <!-- Launch + Reset -->
+        <div class="mission-row">
+            <button id="btn-launch">LAUNCH MISSION</button>
+            <button id="btn-reset">RESET</button>
+        </div>
+
     </div>
 
+    <div id="briefing-output"></div>
 
-
-
-
-
-
-
-
-
+    <!-- Script tag goes here at the bottom, just once -->
+    <script src="script.js"></script>
 </body>
+</html>
     
