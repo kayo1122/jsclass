@@ -1,17 +1,122 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        label {
-            display: block;
-            margin-top: 10px;
-        }
-        select, button {
-            margin-top: 5px;
-        }
-        #briefing {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background-color: #f9f9f9;
-        }
+    background-color: #0a0a0a;
+    color: #00ff41;
+    font-family: "Courier New", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+
+
+h2 {
+    font-size: 2rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #00ff41;
+    border-bottom: 1px solid #00ff41;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+
+
+#mission-builder {
+    background-color: #111;
+    border: 1px solid #00ff41;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+
+.mission-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 12px;
+}
+
+
+
+button {
+    background-color: transparent;
+    color: #00ff41;
+    border: 1px solid #00ff41;
+    padding: 8px 16px;
+    font-family: "Courier New", monospace;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    min-width: 180px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #00ff41;
+    color: #0a0a0a;
+}
+
+
+#btn-launch {
+    background-color: #00ff41;
+    color: #0a0a0a;
+    font-weight: bold;
+    min-width: 180px;
+}
+
+#btn-launch:hover {
+    background-color: #00cc33;
+}
+
+
+#btn-reset {
+    border-color: #555;
+    color: #555;
+    min-width: 100px;
+}
+
+#btn-reset:hover {
+    background-color: #555;
+    color: #0a0a0a;
+}
+
+
+span {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #aaa;
+    text-transform: uppercase;
+}
+
+
+#briefing-output {
+    margin-top: 30px;
+    background-color: #111;
+    border: 1px solid #00ff41;
+    padding: 24px;
+    width: 100%;
+    max-width: 600px;
+    white-space: pre;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    color: #00ff41;
+    min-height: 20px;
+}
