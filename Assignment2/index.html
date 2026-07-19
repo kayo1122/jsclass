@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Order Form</title>
+
+  <!-- Link stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Defer JS so it runs after the DOM is parsed -->
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Build Your Own Pizza</h1>
+   <!-- Student ID and Name -->
+    <p id="student-info"></p>
+  </header>
+
+  <main>
+    <form id="pizza-form" novalidate>
+
+      <!-- Customer name -->
+      <div class="form-group">
+      </div>
+
+      <!-- Pizza size -->
+      <div class="form-group">
+      </div>
+
+      <!-- Crust type -->
+      <fieldset class="form-group">
+      </fieldset>
+
+      <!-- Toppings (multiple checkboxes) -->
+      <fieldset class="form-group">
+      </fieldset>
+
+      <!-- Quantity -->
+      <div class="form-group">
+        />
+        <span class="error-msg" id="err-quantity"></span>
+      </div>
+
+      <!-- Spice level (range slider - a bit of a "suitable characteristic" extra) -->
+      <div class="form-group">
+        />
+      </div>
+
+      <!-- Delivery method -->
+      </span>
+      </div>
+
+      <!-- Special instructions -->
+      <div class="form-group">
+        ></textarea>
+      </div>
+
+      <button type="submit" id="orderBtn">Order Pizza</button>
+    </form>
+
+    <!-- Where the Pizza object's description gets displayed -->
+    <section id="order-output" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pizza Palace</p>
+  </footer>
+
+</body>
+</html>
