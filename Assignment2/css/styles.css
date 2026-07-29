@@ -1,2 +1,146 @@
+/* Apply consistent sizing to every element */
+* {
+    box-sizing: border-box;
+}
 
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Header */
+.site-header {
+    background-color: #20232a;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.site-header h1 {
+    margin: 0 0 0.5rem;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Search section */
+.search-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.search-section h2 {
+    margin-top: 0;
+}
+
+#searchForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.search-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+#searchForm button {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #20232a;
+    color: white;
+    cursor: pointer;
+}
+
+#searchForm button:hover {
+    background-color: #3b4049;
+}
+
+/* Loading, error and results message */
+#statusMessage {
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* Movie results grid */
+#results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Individual movie card */
+.movie-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Movie poster */
+.movie-card img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+/* Movie card text */
+.movie-card h2 {
+    font-size: 1.25rem;
+    margin: 1rem 1rem 0.5rem;
+}
+
+.movie-card p {
+    margin: 0.5rem 1rem;
+    line-height: 1.4;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #20232a;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.site-footer a {
+    color: #8ecbff;
+}
+
+.site-footer a:hover {
+    color: white;
+}
+/* Mobile layout */
+@media (max-width: 600px) {
+    .search-controls {
+        flex-direction: column;
+    }
+
+    #searchForm button {
+        width: 100%;
+    }
+}
 
