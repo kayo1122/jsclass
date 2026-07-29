@@ -1,0 +1,111 @@
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #c0392b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+}
+
+/* Main form container */
+main {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Form spacing */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label,
+legend {
+  font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Fieldsets */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.radio-label,
+.checkbox-label {
+  display: block;
+  margin: 8px 0;
+  font-weight: normal;
+}
+
+/* Error messages */
+.error-msg {
+  display: block;
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Order button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+/* Order result */
+#order-output {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #f9e79f;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
